@@ -1,0 +1,180 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "memberships": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "idMember": {
+              "type": "string"
+            },
+            "memberType": {
+              "type": "string"
+            },
+            "unconfirmed": {
+              "type": "boolean"
+            },
+            "deactivated": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "idMember",
+            "memberType",
+            "unconfirmed",
+            "deactivated"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "idMember": {
+              "type": "string"
+            },
+            "memberType": {
+              "type": "string"
+            },
+            "unconfirmed": {
+              "type": "boolean"
+            },
+            "deactivated": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "idMember",
+            "memberType",
+            "unconfirmed",
+            "deactivated"
+          ]
+        }
+      ]
+    },
+    "members": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "activityBlocked": {
+              "type": "boolean"
+            },
+            "avatarHash": {
+              "type": "null"
+            },
+            "avatarUrl": {
+              "type": "null"
+            },
+            "fullName": {
+              "type": "string"
+            },
+            "idMemberReferrer": {
+              "type": "null"
+            },
+            "initials": {
+              "type": "string"
+            },
+            "nonPublic": {
+              "type": "object"
+            },
+            "nonPublicAvailable": {
+              "type": "boolean"
+            },
+            "username": {
+              "type": "string"
+            },
+            "confirmed": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "activityBlocked",
+            "avatarHash",
+            "avatarUrl",
+            "fullName",
+            "idMemberReferrer",
+            "initials",
+            "nonPublic",
+            "nonPublicAvailable",
+            "username",
+            "confirmed"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "activityBlocked": {
+              "type": "boolean"
+            },
+            "avatarHash": {
+              "type": "null"
+            },
+            "avatarUrl": {
+              "type": "null"
+            },
+            "fullName": {
+              "type": "string"
+            },
+            "idMemberReferrer": {
+              "type": "string"
+            },
+            "initials": {
+              "type": "string"
+            },
+            "nonPublic": {
+              "type": "object"
+            },
+            "nonPublicAvailable": {
+              "type": "boolean"
+            },
+            "username": {
+              "type": "string"
+            },
+            "confirmed": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "activityBlocked",
+            "avatarHash",
+            "avatarUrl",
+            "fullName",
+            "idMemberReferrer",
+            "initials",
+            "nonPublic",
+            "nonPublicAvailable",
+            "username",
+            "confirmed"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "memberships",
+    "members"
+  ]
+}

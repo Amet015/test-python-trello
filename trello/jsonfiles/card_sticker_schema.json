@@ -1,0 +1,116 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "top": {
+      "type": "integer"
+    },
+    "left": {
+      "type": "number"
+    },
+    "zIndex": {
+      "type": "integer"
+    },
+    "rotate": {
+      "type": "integer"
+    },
+    "image": {
+      "type": "string"
+    },
+    "imageUrl": {
+      "type": "string"
+    },
+    "imageScaled": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "_id": {
+              "type": "null"
+            },
+            "id": {
+              "type": "null"
+            },
+            "scaled": {
+              "type": "boolean"
+            },
+            "url": {
+              "type": "string"
+            },
+            "bytes": {
+              "type": "null"
+            },
+            "height": {
+              "type": "integer"
+            },
+            "width": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "_id",
+            "id",
+            "scaled",
+            "url",
+            "bytes",
+            "height",
+            "width"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "_id": {
+              "type": "null"
+            },
+            "id": {
+              "type": "null"
+            },
+            "scaled": {
+              "type": "boolean"
+            },
+            "url": {
+              "type": "string"
+            },
+            "bytes": {
+              "type": "null"
+            },
+            "height": {
+              "type": "integer"
+            },
+            "width": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "_id",
+            "id",
+            "scaled",
+            "url",
+            "bytes",
+            "height",
+            "width"
+          ]
+        }
+      ]
+    },
+    "limits": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "id",
+    "top",
+    "left",
+    "zIndex",
+    "rotate",
+    "image",
+    "imageUrl",
+    "imageScaled",
+    "limits"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "idChecklist": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "idMember": {
+      "type": "null"
+    },
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "nameData": {
+      "type": "object",
+      "properties": {
+        "emoji": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "emoji"
+      ]
+    },
+    "pos": {
+      "type": "integer"
+    },
+    "due": {
+      "type": "null"
+    },
+    "limits": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "idChecklist",
+    "state",
+    "idMember",
+    "id",
+    "name",
+    "nameData",
+    "pos",
+    "due",
+    "limits"
+  ]
+}

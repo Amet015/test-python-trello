@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "idBoard": {
+          "type": "string"
+        },
+        "idList": {
+          "type": "string"
+        },
+        "pos": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "idBoard",
+        "idList",
+        "pos"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "idBoard": {
+          "type": "string"
+        },
+        "idList": {
+          "type": "string"
+        },
+        "pos": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "idBoard",
+        "idList",
+        "pos"
+      ]
+    }
+  ]
+}
