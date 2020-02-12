@@ -8,12 +8,12 @@ pipeline {
     }
     stage('Install Requirements') {
       steps {
-          sh 'pip3 install -r requirements.txt'
+          bat 'pip3 install -r requirements.txt'
       }
     }
     stage('API') {
       steps {
-        sh 'behave trello/api/features'
+        bat 'behave trello/api/features'
       }
     }
   }
