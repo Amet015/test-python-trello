@@ -13,7 +13,7 @@ pipeline {
     }
     stage('API') {
       steps {
-        bat 'behave trello/api/features'
+        bat 'behave trello/api/features --tags=~@wip --tags=~@defect'
       }
     }
   }
